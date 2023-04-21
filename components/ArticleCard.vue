@@ -14,7 +14,7 @@
         {{ article.title }}
       </h3>
       <div class="line-clamp-4">
-        {{ article.teaser }}
+        {{ article.subtitle }}
       </div>
     </div>
   </NuxtLink>

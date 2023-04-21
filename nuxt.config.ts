@@ -1,13 +1,12 @@
 import { apiPlugin } from "@storyblok/vue";
 
 export default defineNuxtConfig({
-  css: ["@/assets/css/roboto.css"],
+  css: ["@/assets/css/nunito.css"],
   modules: [
     [
       "@storyblok/nuxt",
       {
         accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-        // accessToken: "xr4OhJ2GGQ6Oco2ugxQn0Att",
         use: [apiPlugin],
         apiOptions: { region: "us" },
       },
