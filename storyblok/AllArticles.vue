@@ -1,6 +1,6 @@
 <template>
-  <div class="py-24">
-    <h2 class="text-6xl text-[#50b0ae] font-bold text-center mb-12">
+  <div class="">
+    <h2 class="text-6xl text-[#ff6e39] font-bold text-center mb-12">
       {{ blok.title }}
     </h2>
     <div

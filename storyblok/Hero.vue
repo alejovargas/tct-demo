@@ -17,7 +17,7 @@
     <img
       :src="blok.background_image.filename"
       :alt="blok.background_image.alt"
-      class="absolute top-0 left-0 z-0 w-full h-full object-cover"
+      class="absolute top-0 left-0 z-0 w-full object-cover"
     />
   </div>
 </template>

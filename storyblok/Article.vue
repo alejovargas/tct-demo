@@ -10,10 +10,10 @@
       class="rounded-[10px] w-full object-cover -mt-[100px]"
     />
     <div class="container mx-auto mb-12">
-      <h4 class="text-xs leading-9 pl-11 my-8 tct-circle">
-        Written by Priscilla Greear
+      <h4 class="text-xs leading-9 pl-11 my-8 tct-circle" v-if="blok.author">
+        <span>{{ blok.prefix }}</span> {{ blok.author }}
       </h4>
-      <h1 class="text-5xl font-light mb-10">
+      <h1 class="text-3xl font-light mt-8 mb-10">
         {{ blok.title }}
       </h1>
       <div v-html="resolvedTeaser" class="prose mb-5"></div>

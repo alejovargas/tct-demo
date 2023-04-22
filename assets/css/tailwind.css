@@ -45,10 +45,18 @@ body {
   font-size: 1.438rem;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1;
+  line-height: 2rem;
 }
 
-/* .tct-article p {
+.tct-article p {
   font-weight: 300;
   font-size: 1.125rem;
-} */
+}
+
+.tct-article b {
+  font-weight: 500;
+}
+
+.tct-article a {
+  font-weight: 300;
+}

@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="py-24 text-6xl text-[#50b0ae] font-bold text-center"
+    class="my-24 text-3xl text-[#00000] leading-10 font-bold text-center"
   >
     {{ blok.headline }}
   </div>
