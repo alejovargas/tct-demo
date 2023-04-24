@@ -2,7 +2,7 @@
   <header class="w-full h-[470px] bg-[#FF6E39]">
     <div class="container h-44 mx-auto flex items-center justify-between">
       <NuxtLink :to="localePath('/')">
-        <img src="/logo-tct.svg" alt="The Chidrens Trust" />
+        <img src="/logo-tct-w.svg" alt="The Chidrens Trust" />
       </NuxtLink>
       <nav>
         <ul class="flex space-x-8 text-lg text-orange-100">
