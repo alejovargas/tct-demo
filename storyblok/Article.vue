@@ -33,15 +33,22 @@
           >SHARE</span
         >
       </div>
-      <h3 class="mt-96 text-2xl font-light mb-6">Related Articles</h3>
-      <!-- <pre class="text-xs">{{ blok.image.filename }}</pre> -->
+      <h3 class="mt-96 text-2xl font-light mb-6" v-if="locale === 'ht'">
+        Atik ki gen rapò
+      </h3>
+      <h3 class="mt-96 text-2xl font-light mb-6" v-else-if="locale === 'es'">
+        Artículos Relacionados
+      </h3>
+      <h3 class="mt-96 text-2xl font-light mb-6" v-else>Related Articles</h3>
       <div class="grid gap-6">
-        <RelatedArticle
-          v-for="article in articles"
-          :key="article.uid"
-          :article="article.content"
-          :slug="article.full_slug"
-        />
+        <div v-for="article in articles">
+          <RelatedArticle
+            v-if="article.content.title !== blok.title"
+            :key="article.uid"
+            :article="article.content"
+            :slug="article.full_slug"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -62,5 +69,7 @@ const { data } = await storyblokApi.get("cdn/stories", {
   starts_with: "blog",
   is_startpage: false,
 });
+// const allArticles = ref(data.stories);
+// const articles = allArticles.filter((a) => a.content.title !== blok.title);
 const articles = ref(data.stories);
 </script>
