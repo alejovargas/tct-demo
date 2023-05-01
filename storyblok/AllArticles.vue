@@ -3,12 +3,10 @@
     <h2 class="text-6xl text-[#ff6e39] font-bold text-center mb-12">
       {{ blok.title }}
     </h2>
-    <div
-      class="container mx-auto grid md:grid-cols-3 gap-12 my-12 place-items-start"
-    >
+    <div class="grid md:grid-cols-3 gap-6 mb-12 place-items-start">
       <ArticleCard
         v-for="article in articles"
-        :key="article.uuid"
+        :key="article.uid"
         :article="article.content"
         :slug="article.full_slug"
       />

@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full bg-[#0FC1EA]">
+  <footer class="relative w-full bg-[#0FC1EA]">
     <div class="container h-44 mx-auto flex items-center justify-between">
       <NuxtLink :to="localePath('/')">
         <img src="/logo-tct-b.svg" alt="The Chidrens Trust" />
@@ -62,11 +62,11 @@
         Phone: 305.571.5700 | Privacy Policy | Terms of Use
       </div>
       <div class="basis-1/5 flex flex-row-reverse gap-2">
-        <img src="/facebook.svg" alt="facebook" />
-        <img src="/instagram.svg" alt="instagram" />
-        <img src="/twitter.svg" alt="twitter" />
-        <img src="/linkedin.svg" alt="linkedin" />
         <img src="/youtube.svg" alt="youtube" />
+        <img src="/linkedin.svg" alt="linkedin" />
+        <img src="/twitter.svg" alt="twitter" />
+        <img src="/instagram.svg" alt="instagram" />
+        <img src="/facebook.svg" alt="facebook" />
       </div>
     </div>
   </footer>
