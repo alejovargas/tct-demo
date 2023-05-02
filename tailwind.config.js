@@ -6,11 +6,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: "Roboto, sans-serif",
+      sans: "Nunito, sans-serif",
     },
   },
   plugins: [
     require("@tailwindcss/typography"),
     // require("@tailwindcss/line-clamp"),
+    require("prettier-plugin-tailwindcss"),
   ],
+  tailwindConfig: "./styles/tailwind.config.js",
 };

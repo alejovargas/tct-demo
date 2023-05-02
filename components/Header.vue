@@ -1,23 +1,26 @@
 <template>
-  <header class="w-full h-24 bg-[#f7f6fd]">
-    <div class="container h-full mx-auto flex items-center justify-between">
+  <header class="w-full h-[470px] bg-[#FF6E39]">
+    <div class="container h-44 mx-auto flex items-center justify-between">
       <NuxtLink :to="localePath('/')">
-        <h1 class="text-[#50b0ae] text-3xl font-bold">TCT</h1>
+        <img src="/logo-tct-w.svg" alt="The Chidrens Trust" />
       </NuxtLink>
       <nav>
-        <ul class="flex space-x-8 text-lg font-bold">
+        <ul class="flex space-x-8 text-lg text-orange-100">
           <li>
-            <NuxtLink :to="localePath('/blog')" class="hover:text-[#50b0ae]"
+            <NuxtLink :to="localePath('/blog')" class="hover:text-white"
               >Blog</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink :to="localePath('/about')" class="hover:text-[#50b0ae]"
+            <NuxtLink :to="localePath('/about')" class="hover:text-white"
               >About</NuxtLink
             >
           </li>
           <li v-for="lang in availableLocales" :key="lang">
-            <NuxtLink :to="switchLocalePath(lang)" class="uppercase">
+            <NuxtLink
+              :to="switchLocalePath(lang)"
+              class="uppercase hover:text-white"
+            >
               {{ lang }}
             </NuxtLink>
           </li>
@@ -39,6 +42,6 @@ const availableLocales = computed(() => {
 
 <style scoped>
 nav a.router-link-active {
-  @apply underline underline-offset-4 decoration-4 decoration-[#50b0ae];
+  @apply underline underline-offset-4 decoration-4 decoration-[#ffffff];
 }
 </style>

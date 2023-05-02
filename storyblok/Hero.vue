@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="min-h-[480px] relative flex items-end justify-center overflow-hidden"
+    class="min-h-[380px] relative flex items-end justify-center overflow-hidden"
     :class="heroClasses"
   >
     <div
@@ -10,14 +10,14 @@
       <h1 class="text-6xl text-white font-bold mb-3">
         {{ blok.headline }}
       </h1>
-      <h2 class="text-4xl text-white font-light">
+      <h3 class="text-4xl text-white font-light">
         {{ blok.subheadline }}
-      </h2>
+      </h3>
     </div>
     <img
       :src="blok.background_image.filename"
       :alt="blok.background_image.alt"
-      class="absolute top-0 left-0 z-0 w-full h-full object-cover"
+      class="absolute top-0 left-0 z-0 w-full object-cover"
     />
   </div>
 </template>
