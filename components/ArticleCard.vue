@@ -7,7 +7,7 @@
     <img
       :src="article.image.filename + '/m/600x0'"
       :alt="article.image.alt"
-      class="w-full h-48 xl:h-72 object-cover pointer-events-none"
+      class="w-full object-cover pointer-events-none"
     />
     <div class="p-4">
       <h3 class="text-xl text-[#1d243d] font-bold mb-3">
